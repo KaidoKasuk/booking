@@ -50,32 +50,23 @@ This guide describes how to use the WordPress-based booking site from two perspe
 
 1. Open the booking page in your browser.
 
-> 📸 **![ Alt text](/ss/Kuvatõmmis%202026-05-09%20235650.png)**
+> **![ Alt text](/ss/url.png)**
 
-2. Select the desired service or time from the booking calendar.
+2. Select the desired service and time from the booking calendar.
 
-> 📸 **[ADD SCREENSHOT: service or time selection view in the Amelia form]**
+> **![ Alt text](/ss/service.png)**
 
 3. Fill in your details (name, email).
 
-> 📸 **[ADD SCREENSHOT: the data entry form]**
+> **![ Alt text](/ss/yourinfopng.png)**
 
 4. Confirm the booking by clicking **"Book"** (or the equivalent button on the page).
 
-> 📸 **[ADD SCREENSHOT: confirmation view after completing the booking]**
+> **![ Alt text](/ss/summarypng.png)**
 
 5. Check your email – a booking confirmation will be sent automatically.
 
 > 💡 If the confirmation email does not arrive within 5 minutes, check your spam folder.
-
----
-
-### Modifying and Cancelling a Booking
-
-1. Open the **"Manage Booking"** link in your confirmation email.
-2. You can cancel the booking or (if the administrator has enabled it) change the time.
-
-> 📸 **[ADD SCREENSHOT: booking management view on the page linked from the email]**
 
 ---
 
@@ -86,7 +77,7 @@ The site supports multiple languages via Polylang.
 1. Find the language switcher at the top of the page (flags or abbreviations e.g. ET / EN).
 2. Click your preferred language.
 
-> 📸 **[ADD SCREENSHOT: language switcher location on the page]**
+> **![ Alt text](/ss/language.png)**
 
 ---
 
@@ -98,9 +89,7 @@ The site supports multiple languages via Polylang.
 2. Enter your username and password.
 3. Click **"Log In"**.
 
-> 📸 **[ADD SCREENSHOT: WordPress wp-admin login page]**
-
-> ⚠️ Keep your credentials secure. Never share them with others.
+> **![ Alt text](/SS/wplogin.png)**
 
 ---
 
@@ -111,61 +100,7 @@ All bookings are visible in the Amelia dashboard.
 1. Log in to the WordPress admin panel.
 2. In the left menu, go to **Amelia → Appointments**.
 
-> 📸 **[ADD SCREENSHOT: Amelia → Appointments view with the bookings list]**
-
-3. Filtering bookings:
-   - Filter by date, service, or staff member
-   - Search for a specific client by name
-
-4. Opening a single booking:
-   - Click on a booking → a detail view opens
-   - You can change the booking status: **Approved / Pending / Cancelled**
-
-> 📸 **[ADD SCREENSHOT: single booking detail view in Amelia]**
-
----
-
-### Amelia – Services and Staff Setup
-
-#### Managing Services
-
-1. Go to **Amelia → Services**.
-2. To edit an existing service, click the pencil icon.
-3. To add a new service, click **"+ Add Service"**.
-
-> 📸 **[ADD SCREENSHOT: Amelia services list and the add button]**
-
-For each service you can configure:
-
-- Name and description
-- Duration and price
-- Maximum number of bookings at the same time
-
-#### Managing Staff
-
-1. Go to **Amelia → Employees**.
-2. Add a staff member by clicking **"+ Add Employee"** or edit an existing one.
-
-> 📸 **[ADD SCREENSHOT: Amelia employee management view]**
-
----
-
-### Amelia – Working Hours and Days Off
-
-#### Setting Working Hours
-
-1. Go to **Amelia → Employees** and open an employee profile.
-2. Select the **"Work Hours"** tab.
-3. Set the employee's working days and hours.
-
-> 📸 **[ADD SCREENSHOT: employee working hours configuration view]**
-
-#### Days Off and Holidays
-
-1. In the same employee profile, select the **"Days Off"** tab.
-2. Add vacation days or public holidays.
-
-> 📸 **[ADD SCREENSHOT: days off addition view]**
+> **![ Alt text](/SS/appointments.png)**
 
 ---
 
@@ -175,13 +110,9 @@ Polylang allows the site to be displayed in multiple languages.
 
 1. Go to **Languages → Translations**.
 
-> 📸 **[ADD SCREENSHOT: Polylang translations management view]**
-
 2. To translate pages:
    - Go to the **Pages** list
    - The page row has a language icon column – click the pencil icon next to the desired language to add or edit a translation
-
-> 📸 **[ADD SCREENSHOT: pages list view with Polylang language icons]**
 
 > ⚠️ Amelia booking form content (service names, descriptions) is translated separately within Amelia settings, not through Polylang.
 
@@ -193,12 +124,8 @@ JavaScript customizations for the site's functionality are added via the Code Sn
 
 1. Go to **Snippets → All Snippets**.
 
-> 📸 **[ADD SCREENSHOT: Code Snippets plugin list view]**
-
 2. To edit an existing snippet, click its name.
 3. Activate or deactivate a snippet using its toggle switch.
-
-> ⚠️ **Important:** Do not delete or modify existing snippets unless you are certain what they do. A wrong change can break the site. Always back up the snippet content (copy it to a separate file) before making changes.
 
 ---
 
@@ -213,14 +140,6 @@ The booking form is displayed on a page using a shortcode — a short code like 
 [ameliabooking]
 ```
 
-or another Amelia shortcode depending on your setup.
-
-> 📸 **[ADD SCREENSHOT: page editor with shortcode visible inside an HTML block]**
-
-> ⚠️ Do not delete the shortcode from the page content – doing so will remove the booking form from the page.
-
-To add the booking form to another page, copy the shortcode and paste it into the desired page's HTML block.
-
 ---
 
 ### Updating Plugins
@@ -234,7 +153,7 @@ Regular updates are important for security and stability.
 
 > 📸 **[ADD SCREENSHOT: WordPress updates dashboard]**
 
-> ⚠️ Amelia and Code Snippets updates in particular can affect the booking form – always test after updating.
+> ⚠️ Amelia and Code Snippets updates in particular can affect the booking form – test after updating.
 
 ---
 
@@ -251,8 +170,6 @@ Keeping PHP and WordPress core up to date is critical for security. These update
    - Check that your plugins are compatible with the new WordPress version (check each plugin's page on wordpress.org)
 4. Click **"Update Now"**.
 5. After the update, navigate through the site and test the booking form end-to-end.
-
-> 📸 **[ADD SCREENSHOT: WordPress core update notice on the Updates page]**
 
 > ⚠️ Never update WordPress core on a live site without a backup. If something breaks, restore from backup and investigate before trying again.
 
@@ -274,8 +191,6 @@ PHP is the server-side language WordPress runs on. PHP updates are done through 
 4. Save the change.
 5. Immediately open the site and WordPress admin to check for errors.
 
-> 📸 **[ADD SCREENSHOT: PHP version selector in your hosting control panel]**
-
 > 💡 Recommended PHP versions for WordPress as of 2025: **PHP 8.2** or **8.3**. Avoid versions marked as end-of-life (e.g. PHP 7.4 or 8.0).
 
 **After updating PHP:**
@@ -285,7 +200,7 @@ PHP is the server-side language WordPress runs on. PHP updates are done through 
 - Go to **Tools → Site Health** – it will flag any issues caused by the PHP change
 - If a white screen or fatal error appears, revert to the previous PHP version in your hosting panel immediately and investigate which plugin or code is incompatible
 
-> ⚠️ Because this site uses custom CSS, HTML, and Code Snippets with JavaScript, pay extra attention to any JS errors in the browser console (F12 → Console tab) after a PHP update.
+> ⚠️ Because this site uses custom CSS, HTML, and Code Snippets with JavaScript, pay extra attention to any errors in the browser console (F12 → Console tab) after a PHP update.
 
 ---
 
@@ -385,7 +300,3 @@ Because this site uses Code Snippets for JavaScript, a snippet may contain PHP t
 2. Review any critical issues flagged there – they often point directly to the incompatibility.
 
 > 💡 After resolving the issue, always document what caused the problem (e.g. "PHP 8.3 incompatible with Code Snippets version X.X") so future updates can account for it.
-
----
-
-> 📞 **Technical support:** Save your developer's contact details here: \***\*\*\*\*\***\_\_\***\*\*\*\*\***
