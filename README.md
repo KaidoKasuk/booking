@@ -89,7 +89,7 @@ The site supports multiple languages via Polylang.
 2. Enter your username and password.
 3. Click **"Log In"**.
 
-> **![ Alt text](/SS/wplogin.png)**
+> **![ Alt text](ss/wplogin.png)**
 
 ---
 
@@ -100,7 +100,7 @@ All bookings are visible in the Amelia dashboard.
 1. Log in to the WordPress admin panel.
 2. In the left menu, go to **Amelia → Appointments**.
 
-> **![ Alt text](/SS/appointments.png)**
+> **![ Alt text](ss/appointments.png)**
 
 ---
 
