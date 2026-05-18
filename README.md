@@ -170,7 +170,7 @@ How to work with pages:
 4. Modify existing HTML carefully, preserving the shortcode and any custom markup.
 5. To remove content, delete the relevant HTML section only, then preview the page before publishing.
 
-> **![ Add screenshot: open page in code editor](ss/codeeditor.png)**
+> **![open page in code editor](ss/codeeditor.png)**
 
 ---
 
@@ -304,8 +304,6 @@ Option A – Disable plugins via FTP/File Manager:
 2. Navigate to `wp-content/plugins/`.
 3. Rename the folder of the last updated plugin (e.g. `amelia` → `amelia_disabled`).
 4. Try opening WordPress admin again.
-
-> 📸 **[ADD SCREENSHOT: hosting file manager showing the plugins folder]**
 
 Option B – Use hosting one-click restore if you have a recent backup.
 
