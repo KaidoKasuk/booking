@@ -268,8 +268,6 @@ PHP is the server-side language WordPress runs on. PHP updates are done through 
 3. Switch the editor to **HTML / Code view** (in the block editor, click the three dots on the block → **Edit as HTML**).
 4. Check whether the shortcode (e.g. `[ameliabooking]`) is still present.
 
-> 📸 **[ADD SCREENSHOT: HTML block editor view showing the shortcode]**
-
 If the shortcode is missing, re-add it and save. Test the page in a new private/incognito browser window.
 
 **Step 2 – Check that the Amelia plugin is active**
