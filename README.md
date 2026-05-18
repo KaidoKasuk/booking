@@ -6,28 +6,33 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [End User Guide](#end-user-guide)
-   - [Making a Booking](#making-a-booking)
-   - [Modifying and Cancelling a Booking](#modifying-and-cancelling-a-booking)
-   - [Switching Language](#switching-language)
-3. [WP Admin Guide](#wp-admin-guide)
-   - [Accessing the WordPress Admin Panel](#accessing-the-wordpress-admin-panel)
-   - [Amelia – Managing Bookings](#amelia--managing-bookings)
-   - [Amelia – Services and Staff Setup](#amelia--services-and-staff-setup)
-   - [Amelia – Working Hours and Days Off](#amelia--working-hours-and-days-off)
-   - [Polylang – Managing Translations](#polylang--managing-translations)
-   - [Code Snippets – Managing Customizations](#code-snippets--managing-customizations)
-   - [Managing Pages and Shortcodes](#managing-pages-and-shortcodes)
-   - [Updating Plugins](#updating-plugins)
-   - [Updating PHP and WordPress Core](#updating-php-and-wordpress-core)
-4. [Troubleshooting](#troubleshooting)
-   - [Quick Reference Table](#quick-reference-table)
-   - [Detailed Troubleshooting Examples](#detailed-troubleshooting-examples)
+- [Booking Site User Guide](#booking-site-user-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction READ FIRST](#introduction-read-first)
+  - [If in thought Google and ask help.](#if-in-thought-google-and-ask-help)
+  - [End User Guide](#end-user-guide)
+    - [Making a Booking](#making-a-booking)
+    - [Switching Language](#switching-language)
+  - [WP Admin Guide](#wp-admin-guide)
+    - [Accessing the WordPress Admin Panel](#accessing-the-wordpress-admin-panel)
+    - [Amelia – Managing Bookings](#amelia--managing-bookings)
+    - [Polylang – Managing Translations](#polylang--managing-translations)
+    - [Code Snippets – Managing Customizations](#code-snippets--managing-customizations)
+    - [Managing Pages and Shortcodes](#managing-pages-and-shortcodes)
+    - [Default Page Editor](#default-page-editor)
+    - [Updating Plugins](#updating-plugins)
+    - [Updating PHP and WordPress Core](#updating-php-and-wordpress-core)
+      - [Updating WordPress Core](#updating-wordpress-core)
+      - [Updating PHP](#updating-php)
+  - [Troubleshooting](#troubleshooting)
+    - [Quick Reference Table](#quick-reference-table)
+    - [Detailed Troubleshooting Examples](#detailed-troubleshooting-examples)
+      - [Example 1: Booking Form Has Disappeared from the Page](#example-1-booking-form-has-disappeared-from-the-page)
+      - [Example 2: Site Shows a White Screen After a PHP or Plugin Update](#example-2-site-shows-a-white-screen-after-a-php-or-plugin-update)
 
 ---
 
-## Introduction
+## Introduction READ FIRST
 
 This guide describes how to use the WordPress-based booking site from two perspectives:
 
@@ -42,7 +47,9 @@ This guide describes how to use the WordPress-based booking site from two perspe
 - Design: custom HTML + CSS (blank theme file), all styling is hand-built
 - Booking form display: shortcodes on pages
 
----
+This document does not cover all problems and solutions to them.
+
+## If in thought Google and ask help.
 
 ## End User Guide
 
@@ -90,6 +97,8 @@ The site supports multiple languages via Polylang.
 3. Click **"Log In"**.
 
 > **![ Alt text](ss/wplogin.png)**
+
+> **![ Alt text](ss/wpadminfrontend.png)**
 
 ---
 
@@ -140,6 +149,29 @@ The booking form is displayed on a page using a shortcode — a short code like 
 [ameliabooking]
 ```
 
+> **![ Alt text](ss/usedfeatures.png)**
+
+---
+
+### Default Page Editor
+
+This site uses custom HTML pages, so the default page editor is not the right tool for changing the page structure or layout.
+
+- The pages are built with custom HTML and shortcodes, not with the block editor.
+- Use a code editor to add, modify, or delete page content safely.
+- Do not use on the visual editor because it can strip or alter custom HTML and break the booking page layout.
+
+How to work with pages:
+
+1. Open **Pages** and find the page containing the booking shortcode or custom HTML content.
+2. Click **Edit** and switch to the **Code Editor** or **Text** view.
+3. Add new, modigy or remove HTML content where needed.
+   **If HTML language is foreign to you google or ask AI how to use HTML. Since code editor in WordPress is simple it does not show errors. you can only see the errors with dev tools at the webpage.**
+4. Modify existing HTML carefully, preserving the shortcode and any custom markup.
+5. To remove content, delete the relevant HTML section only, then preview the page before publishing.
+
+> **![ Add screenshot: open page in code editor](ss/codeeditor.png)**
+
 ---
 
 ### Updating Plugins
@@ -151,7 +183,7 @@ Regular updates are important for security and stability.
 3. **Always back up the site before updating** (via your hosting control panel).
 4. Update plugins one at a time and check that the site works correctly after each update.
 
-> 📸 **[ADD SCREENSHOT: WordPress updates dashboard]**
+> **![ Alt text](ss/updates.png)**
 
 > ⚠️ Amelia and Code Snippets updates in particular can affect the booking form – test after updating.
 
@@ -191,7 +223,7 @@ PHP is the server-side language WordPress runs on. PHP updates are done through 
 4. Save the change.
 5. Immediately open the site and WordPress admin to check for errors.
 
-> 💡 Recommended PHP versions for WordPress as of 2025: **PHP 8.2** or **8.3**. Avoid versions marked as end-of-life (e.g. PHP 7.4 or 8.0).
+> 💡 Recommended PHP versions for WordPress as of 2026: **PHP 8.2** or **8.3**. Avoid versions marked as end-of-life (e.g. PHP 7.4 or 8.0).
 
 **After updating PHP:**
 
